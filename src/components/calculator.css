@@ -1,0 +1,17 @@
+.calculator-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 50%;
+  text-align: center;
+}
+
+.screen-display {
+  grid-column: span 4;
+  width: 99%;
+  text-align: right;
+  background-color: rgb(187, 187, 187);
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+  padding-right: 10px;
+}
