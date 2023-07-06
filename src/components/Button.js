@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './buttons.css';
 
 function Button({ btn, handleClick }) {
-  if (btn === '÷' || btn === '×' || btn === '-' || btn === '+' || btn === '=') {
+  if (btn === '÷' || btn === 'x' || btn === '-' || btn === '+' || btn === '=') {
     return <button type="button" className="button operators" onClick={handleClick}>{btn}</button>;
   }
   if (btn === '0') {

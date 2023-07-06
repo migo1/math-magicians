@@ -3,7 +3,7 @@ import Button from './Button';
 import './calculator.css';
 import caclulate from '../logic/calculate';
 
-const btnKeys = ['AC', '+/-', '%', '÷', '7', '8', '9', '×', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
+const btnKeys = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
 
 function Calculator() {
   const [state, setState] = useState({ total: null, next: null, operation: null });
