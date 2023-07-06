@@ -2,32 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './buttons.css';
 
-function Button({ btn, handleClick }) {
-  if (btn === '÷' || btn === 'x' || btn === '-' || btn === '+' || btn === '=') {
-    return <button type="button" className="button operators" onClick={handleClick}>{btn}</button>;
-  }
-  if (btn === '0') {
-    return (
+function Button({ btn, color, handleClick }) {
+  const btnClass = `button ${color}`;
+  const btnClassZero = `button ${color} zero-btn`;
+  return (
+    <>
       <button
         type="button"
-        className="button other-btns zero-btn"
+        className={btn === '0' ? btnClassZero : btnClass}
         onClick={handleClick}
       >
         {btn}
       </button>
-    );
-  }
-
-  return (
-    <button type="button" className="button other-btns" onClick={handleClick}>
-      {btn}
-    </button>
+    </>
   );
 }
 
 Button.propTypes = {
   btn: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   handleClick: PropTypes.func.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default Button;

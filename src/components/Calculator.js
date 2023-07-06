@@ -16,8 +16,13 @@ function Calculator() {
   };
   return (
     <div className="calculator-container">
-      <div className="screen-display">{ total || next || operation || 0 }</div>
-      {btnKeys.map((btnKey) => (<Button key={btnKey} btn={btnKey} handleClick={handleClick} />))}
+      <div className="screen-display">{ next || operation || total || 0 }</div>
+      {btnKeys.map((btnKey) => (
+        btnKey === '÷' || btnKey === 'x' || btnKey === '-' || btnKey === '+' || btnKey === '=' ? (
+          <Button key={btnKey} btn={btnKey} color="operators" handleClick={handleClick} />) : (
+            <Button key={btnKey} btn={btnKey} color="other-btns" handleClick={handleClick} />
+        )
+      ))}
     </div>
   );
 }
