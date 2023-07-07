@@ -7,7 +7,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -52,12 +51,6 @@ This is a react app that allows users to make simple calculations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Coming Soon
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -113,8 +106,7 @@ Coming soon
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] Calculator Functionality
-- [ ] Quote Functionality
+- [ ] Singe Page Application
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
