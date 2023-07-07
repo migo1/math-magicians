@@ -46,7 +46,7 @@ This is a react app that allows users to make simple calculations.
 
 ### Key Features <a name="key-features"></a>
 
-- React Setup
+- [x] A functioning calculator page with random quotes 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
