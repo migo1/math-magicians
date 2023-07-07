@@ -106,7 +106,9 @@ Coming soon
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] Singe Page Application
+- [ ] add a home page
+- [ ] add a calculator page
+- [ ] add a quote page with a quote generator
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
