@@ -1,16 +1,34 @@
 .quotes {
   margin-top: 10px;
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   padding: 0 10px;
   text-align: center;
+  align-items: center;
+}
+
+.quote-category {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
 }
 
 .quote {
   font-style: italic;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .author {
   font-weight: bold;
+  font-size: 20px;
+}
+
+.quotes-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50vh;
+  align-content: center;
 }

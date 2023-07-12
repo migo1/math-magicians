@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './quotes.css';
 
-const category = ['success', 'inspirational', 'humor', 'hope', 'home', 'history'];
-
-function getRandomCategory() {
-  const randomIndex = Math.floor(Math.random() * category.length);
-  return category[randomIndex];
-}
-
 function Quotes() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -16,8 +9,7 @@ function Quotes() {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const randomCategory = getRandomCategory();
-        const url = `https://api.api-ninjas.com/v1/quotes?category=${randomCategory}`;
+        const url = 'https://api.api-ninjas.com/v1/quotes?category=success';
         const response = await fetch(url, {
           headers: {
             'X-Api-Key': 'xwgw5/6Xu28wn4UN6tX7zQ==ZBQT8ALAOG4Y3T56',
@@ -40,10 +32,12 @@ function Quotes() {
   if (loading) return <h1>Loading Quote...</h1>;
   if (error) return <h1>404 Not found</h1>;
   return (
-    <div className="quotes">
-      <h3>{quote.category}</h3>
-      <p className="quote">{quote.quote}</p>
-      <p className="author">{quote.author}</p>
+    <div className="quotes-wrapper">
+      <div className="quotes">
+        <h2 className="quote-category">{quote.category}</h2>
+        <p className="quote">{quote.quote}</p>
+        <p className="author">{quote.author}</p>
+      </div>
     </div>
   );
 }
