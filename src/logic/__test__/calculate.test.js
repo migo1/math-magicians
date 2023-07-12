@@ -48,6 +48,38 @@ describe('calculate', () => {
       operation: null,
     });
   });
+
+  it('performs division operation correctly', () => {
+    const initialState = {
+      total: '12',
+      next: '4',
+      operation: '÷',
+    };
+
+    const newState = calculate(initialState, '=');
+
+    expect(newState).toEqual({
+      total: '3',
+      next: null,
+      operation: null,
+    });
+  });
+
+  it('performs multiplication operation correctly', () => {
+    const initialState = {
+      total: '12',
+      next: '4',
+      operation: 'x',
+    };
+
+    const newState = calculate(initialState, '=');
+
+    expect(newState).toEqual({
+      total: '48',
+      next: null,
+      operation: null,
+    });
+  });
   // Add more test cases for different button inputs and expected outputs
   // based on the behavior of the calculate function.
 });
