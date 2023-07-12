@@ -80,6 +80,4 @@ describe('calculate', () => {
       operation: null,
     });
   });
-  // Add more test cases for different button inputs and expected outputs
-  // based on the behavior of the calculate function.
 });

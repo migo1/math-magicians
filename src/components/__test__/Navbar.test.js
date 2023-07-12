@@ -23,6 +23,4 @@ describe('Navbar', () => {
     expect(getByText('Calculator')).toBeInTheDocument();
     expect(getByText('Quote')).toBeInTheDocument();
   });
-
-  // Add more test cases to cover other interactions and expected outcomes
 });
