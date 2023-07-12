@@ -15,14 +15,17 @@ function Calculator() {
     setState(caclulate(state, btnValue));
   };
   return (
-    <div className="calculator-container">
-      <div className="screen-display">{ next || operation || total || 0 }</div>
-      {btnKeys.map((btnKey) => (
-        btnKey === '÷' || btnKey === 'x' || btnKey === '-' || btnKey === '+' || btnKey === '=' ? (
-          <Button key={btnKey} btn={btnKey} color="operators" handleClick={handleClick} />) : (
-            <Button key={btnKey} btn={btnKey} color="other-btns" handleClick={handleClick} />
-        )
-      ))}
+    <div className="calc-wrapper">
+      <h2 className="calc-title">Let`s do some math!</h2>
+      <div className="calculator-container">
+        <div className="screen-display">{ next || operation || total || 0 }</div>
+        {btnKeys.map((btnKey) => (
+          btnKey === '÷' || btnKey === 'x' || btnKey === '-' || btnKey === '+' || btnKey === '=' ? (
+            <Button key={btnKey} btn={btnKey} color="operators" handleClick={handleClick} />) : (
+              <Button key={btnKey} btn={btnKey} color="other-btns" handleClick={handleClick} />
+          )
+        ))}
+      </div>
     </div>
   );
 }

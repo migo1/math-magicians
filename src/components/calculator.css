@@ -1,8 +1,15 @@
+.calc-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+}
+
 .calculator-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 50%;
+  width: 60%;
   text-align: center;
+  padding-top: 8%;
 }
 
 .screen-display {
@@ -14,4 +21,8 @@
   font-size: 20px;
   padding: 15px 0;
   padding-right: 10px;
+}
+
+.calc-title {
+  font-size: 30px;
 }
