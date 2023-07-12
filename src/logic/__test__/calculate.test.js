@@ -17,6 +17,37 @@ describe('calculate', () => {
     expect(calculate(obj, 'AC')).toEqual(expected);
   });
 
+  it('performs addition operation correctly', () => {
+    const initialState = {
+      total: '10',
+      next: '5',
+      operation: '+',
+    };
+
+    const newState = calculate(initialState, '=');
+
+    expect(newState).toEqual({
+      total: '15',
+      next: null,
+      operation: null,
+    });
+  });
+
+  it('performs subtraction operation correctly', () => {
+    const initialState = {
+      total: '10',
+      next: '5',
+      operation: '-',
+    };
+
+    const newState = calculate(initialState, '=');
+
+    expect(newState).toEqual({
+      total: '5',
+      next: null,
+      operation: null,
+    });
+  });
   // Add more test cases for different button inputs and expected outputs
   // based on the behavior of the calculate function.
 });
